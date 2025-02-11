@@ -1,0 +1,210 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9073615833360785967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4793684115554437190}
+  - component: {fileID: 4281666659123614076}
+  - component: {fileID: 960152955745016530}
+  m_Layer: 0
+  m_Name: Goblin_Warrior_Female
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4793684115554437190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9073615833360785967}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.806882, y: 17.094868, z: -217.26283}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 329956659967071584}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!143 &4281666659123614076
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9073615833360785967}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1.7
+  m_Radius: 0.3
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.03
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.9, z: 0}
+--- !u!114 &960152955745016530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9073615833360785967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d89c18526a06e5a4bb1b2d311e7dc034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings:
+    IsEnabled: 1
+    Controller: {fileID: 4281666659123614076}
+    Animator: {fileID: 329956659957550182}
+    Transform: {fileID: 4793684115554437190}
+    MovementSpace: {fileID: 0}
+    IdleAnimationName: Idle
+    IdleLongAnimationName: Idle
+    JumpStartAnimationName: Jump_StartBlend
+    JumpPoseAnimationName: Jump_Loop
+    JumpEndAnimationName: Jump_EndBlend
+    MovementAnimationName: MovementBlend
+    DodgingAnimationName: Dodge
+    AttackingAnimationName: Attack
+    StairsOffset: 0.5
+    GroundedOffset: -0.1
+    GroundedRadius: 0.15
+    GroundLayers:
+      serializedVersion: 2
+      m_Bits: 0
+    WalkSpeed: 2
+    RunSpeed: 5
+    SprintSpeed: 10
+    InAirControlAcceleration: 3
+    JumpHeight: 0.8
+    Gravity: 20
+    SpeedSmoothing: 10
+    RotateSpeed: 500
+    JumpTimeout: 0.15
+    SmoothTime: 0.1
+    TransitionTime: 0.025
+    NextLongIdleAnimationTime: 5
+    rotationSpeed: 360
+    CharacterState: 0
+    CollisionFlags: 0
+    MoveDirection: {x: 0, y: 0, z: 0}
+    VerticalSpeed: 0
+    LandingSpeed: 0
+    MoveSpeed: 0
+    TimeSinceLastMove: 0
+    StairsIndex: 0
+    AttackIndex: 1
+    IsJumpingReachedApex: 0
+    IsMovingBack: 0
+    IsMoving: 0
+    InGround: 0
+    InForwardGround: 0
+    InBackGround: 0
+    IsGrounded: 0
+    IsSprinting: 0
+    IsWalking: 0
+    IsAttacking: 0
+    IsDodging: 0
+    LastJumpButtonTime: -10
+    LastAttackButtonTime: -10
+    LastDodgeButtonTime: -10
+    NextAttackTime: -10
+    StopMoveTime: -10
+    LastJumpStartHeight: 0
+    InAirVelocity: {x: 0, y: 0, z: 0}
+    MovementAxis: {x: 0, y: 0}
+    ForwardAxis: {x: 0, y: 0}
+    CurrentVelocity: {x: 0, y: 0, z: 0}
+    AirTime: 0
+    AnimationFoldout: 0
+    DebugFoldout: 0
+--- !u!1001 &329956659966905796
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4793684115554437190}
+    m_Modifications:
+    - target: {fileID: 165754, guid: 9a6b87430c6b2684aa9c1d4616d38a60, type: 3}
+      propertyPath: m_Name
+      value: Character_Goblin_Warrior_Female
+      objectReference: {fileID: 0}
+    - target: {fileID: 432292, guid: 9a6b87430c6b2684aa9c1d4616d38a60, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 432292, guid: 9a6b87430c6b2684aa9c1d4616d38a60, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 432292, guid: 9a6b87430c6b2684aa9c1d4616d38a60, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 432292, guid: 9a6b87430c6b2684aa9c1d4616d38a60, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 432292, guid: 9a6b87430c6b2684aa9c1d4616d38a60, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 432292, guid: 9a6b87430c6b2684aa9c1d4616d38a60, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 432292, guid: 9a6b87430c6b2684aa9c1d4616d38a60, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 432292, guid: 9a6b87430c6b2684aa9c1d4616d38a60, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 432292, guid: 9a6b87430c6b2684aa9c1d4616d38a60, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 432292, guid: 9a6b87430c6b2684aa9c1d4616d38a60, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9519522, guid: 9a6b87430c6b2684aa9c1d4616d38a60, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6ec6bfa33e44eec4791d3cf7b5acfd5f, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9a6b87430c6b2684aa9c1d4616d38a60, type: 3}
+--- !u!95 &329956659957550182 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9519522, guid: 9a6b87430c6b2684aa9c1d4616d38a60, type: 3}
+  m_PrefabInstance: {fileID: 329956659966905796}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &329956659967071584 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 432292, guid: 9a6b87430c6b2684aa9c1d4616d38a60, type: 3}
+  m_PrefabInstance: {fileID: 329956659966905796}
+  m_PrefabAsset: {fileID: 0}
